@@ -107,6 +107,24 @@
       "phoneNumber": "0606635201",
       "birthday": "08.12.1978",
       "gymExpirience": "Yes"
+    },
+    {
+      "fullName": "Milos Trajkovic",
+      "trainingName": "Yoga",
+      "email": "milos112@test.com",
+      "phoneNumber": "3232323",
+      "birthday": "2022-12-20",
+      "gymExpirience": false,
+      "id": 6
+    },
+    {
+      "fullName": "Milos Trajkovic",
+      "trainingName": "Aerobic",
+      "email": "milos112@test.com",
+      "phoneNumber": "3232323",
+      "birthday": "2022-12-23",
+      "gymExpirience": false,
+      "id": 7
     }
   ]
 }

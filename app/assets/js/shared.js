@@ -1,6 +1,7 @@
 window.onload = function () {
   renderLinks();
 };
+
 //Hamburger menu
 let listBox = document.getElementById("list-box");
 if (listBox) listBox.style.right = "-300px";
@@ -34,4 +35,37 @@ function renderLink(text, id, href) {
   a.id = id;
   a.href = href;
   listBox.appendChild(li);
+}
+
+function CandidateService() {
+  this.getCandidates = function() {
+    return fetch("http://localhost:3000/candidates",{
+      method: "GET"
+    })
+  }
+
+  this.createCandidate = function(fullName, selectTrainings, email, phoneNumber, birthday, gymExpirience) {
+    return fetch("http://localhost:3000/candidates", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        fullName: fullName,
+        trainingName: selectTrainings,
+        email: email,
+        phoneNumber: phoneNumber,
+        birthday: birthday,
+        gymExpirience: gymExpirience,
+      }),
+    })
+  }
+}
+
+function TrainingService() {
+  this.getTrainings = function() {
+    return fetch("http://localhost:3000/trainings", {
+      method: "GET",
+    })
+  }
 }

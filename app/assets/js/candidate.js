@@ -1,6 +1,6 @@
-fetch("http://localhost:3000/candidates",{
-    method: "GET"
-})
+const candidateService = new CandidateService();
+
+candidateService.getCandidates()
 .then(function (candidates) {
     return candidates.json();
 })

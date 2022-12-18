@@ -1,3 +1,6 @@
+const candidateService = new CandidateService();
+const trainingService = new TrainingService();
+
 fetch("http://localhost:3000/trainings", {
   method: "GET",
 })
@@ -42,20 +45,8 @@ function createCandidate() {
   let gymExpirience = gymExpirienceField.checked;
   let selectTrainings = selectTrainingsField.value;
 
-  fetch("http://localhost:3000/candidates", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      fullName: fullName,
-      trainingName: selectTrainings,
-      email: email,
-      phoneNumber: phoneNumber,
-      birthday: birthday,
-      gymExpirience: gymExpirience,
-    }),
-  }).then(function () {
+  candidateService.createCandidate(fullName, selectTrainings, email, phoneNumber, birthday, gymExpirience)
+  .then(function () {
     alert("Candidate is created");
   });
 }
