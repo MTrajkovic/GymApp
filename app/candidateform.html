@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATLAS GYM</title>
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/7433d3320f.js"></script>
+</head>
+
+<body>
+    <div class="candidateFormBackgorund">
+    <!-- Navigation Section  -->
+    <div class="nav">
+        <!-- Logo  -->
+        <h2><a href="index.html">ATLAS GYM</a></h2>
+        <!-- Nav Links  -->
+        <ul id="list-box">
+        </ul>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+
+    <br></br>
+    <br></br>
+    <h1 class="candidatesTitle">New Candidate</h1>
+    <!-- <button class="applyCandidates">CREATE CANDIDATE</button> -->
+    <form id="createCandidate">
+        <input type="text" id="fullName" placeholder="Full Name" /><br><br>
+        <input type="date" id="birthday" placeholder="Birthday" /><br><br>
+        <input type="number" id="phoneNumber" placeholder="Phone Number" /><br><br>
+        <input type="email"id="email" placeholder="Email" /><br><br>
+        <p class="gymExpirience">Gym expirience</p>
+        <input type="checkbox" id="gymExpirience"><br>
+        <select id="selectTrainings">
+            <option value="0">Choose training</option>
+        </select><br><br>
+        <button class="applyCandidates" id="createCandidate-btn">CREATE</button>
+        <button  class="applyCandidates"><a href="candidate.html">Go Back</a></button>
+    </form>
+
+    <div class="footerCandidates">
+        <p>
+            ATLAS GYM
+        </p>
+        <p>
+            <i class="fa-solid fa-envelope"></i>mtrajkovic060@gmail.com <br />
+            <i class="fa-solid fa-phone"></i>+381 66 93 029
+        </p>
+    </div>
+
+    <!-- Animate on Scroll Library  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
+
+    <!-- Linking JavaScript File  -->
+    <script src="assets/js/candidate_form.js"></script>
+    <script src="assets/js/shared.js"></script>
+    </div>
+</body>
+
+</html>

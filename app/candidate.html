@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATLAS GYM</title>
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/7433d3320f.js"></script>
+</head>
+
+<body>
+    <div class="candidateFormBackgorund">
+        <!-- Navigation Section  -->
+        <div class="nav">
+            <!-- Logo  -->
+            <h2><a href="index.html">ATLAS GYM</a></h2>
+            <!-- Nav Links  -->
+            <ul id="list-box">
+            </ul>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+
+        <br></br>
+        <br></br>
+        <h1 class="candidateadm">Candidates Administration</h1>
+        <table class="rwd-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Training name</th>
+                    <th>Email</th>
+                    <th>Phone number</th>
+                    <th>Birthday</th>
+                    <th>Gym expirience</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody id="candidates">
+
+            </tbody>
+        </table>
+        <button class="applyCandidates2"><a href="candidateform.html">CREATE CANDIDATE</a></button>
+
+        <div class="footerCandidates">
+            <p>
+                ATLAS GYM
+            </p>
+            <p>
+                <i class="fa-solid fa-envelope"></i>mtrajkovic060@gmail.com <br />
+                <i class="fa-solid fa-phone"></i>+381 66 93 029
+            </p>
+        </div>
+
+        <!-- Animate on Scroll Library  -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 200,
+                duration: 1000,
+            });
+        </script>
+
+        <!-- Linking JavaScript File  -->
+        <script src="assets/js/candidate.js"></script>
+        <script src="assets/js/shared.js"></script>
+    </div>
+</body>
+</html>
